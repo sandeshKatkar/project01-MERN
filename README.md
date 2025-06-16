@@ -45,3 +45,25 @@ add databse name in constants file
 package install : npm i  mongoose express dotenv
 
 connection code: index.js   or  make file in db and import it in index.js
+
+* configure express & Cookie-parser
+
+install express and cookieparser   :npm i express $ npm install cookie-parser $ npm install cors
+
+
+    cors is a middle ware who allows the file types
+    make express app in app.js
+
+
+* rappper function asyncHandler() => it is a rapper function which is used for rap a functions in     
+    async wait and try catch rapper.
+    Ex > const asyncHandler=()=>{
+        (req,res,next,error)=>{
+            Promise.resolve(requestHandler(req,res,next,error)).
+            catch(err)=>next(err)
+        }
+    }
+    export {asyncHandler}
+
+* API Error Handling 
+    => make one file ApiError and make one class ApiError.
